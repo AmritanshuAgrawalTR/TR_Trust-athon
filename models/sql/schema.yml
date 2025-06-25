@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: data
+    description: "Base employee data model"
+    columns:
+      - name: EMPLOYEE_NAME
+        description: "Employee name"
+      - name: DEPARTMENT
+        description: "Employee department"
+      - name: SALARY
+        description: "Employee salary"

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: DQ
+    description: "Data quality model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: ztrial
+    description: "Engineering department analysis"
+    columns:
+      - name: engineering_count
+        description: "Number of engineering employees"
+      - name: total_count
+        description: "Total number of employees"
+      - name: percent
+        description: "Percentage of engineering employees"
