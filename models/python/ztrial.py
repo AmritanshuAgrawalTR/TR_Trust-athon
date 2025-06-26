@@ -1,13 +1,7 @@
-import snowflake.snowpark.functions as F
-
 def model(dbt, session):
-    df = dbt.ref("DQ")
+    
+    df = session.table("MYDATASPACE.A208309_METADATATHON_DATAANALYTICS.DATA_CATALOG_REVENUE")
+    
+    return df.select("*")
 
-    total_employees = df.count()
-    engineering_employees = df.filter(F.col("department") == "Engineering").count()
-
-    result = session.create_dataframe([
-        (engineering_employees, total_employees, round((engineering_employees/total_employees)*100, 2))
-    ], schema=["engineering_count", "total_count", "percent"])
-
-    return result
+# this is just for trial and not letting the code file empty because it will pop an error. " So Ignore it "
