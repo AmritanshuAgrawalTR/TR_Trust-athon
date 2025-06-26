@@ -66,4 +66,4 @@ ORDER BY
         WHEN 'DL' THEN 2 
         WHEN 'MA' THEN 3 
         WHEN 'FINAL' THEN 4 
-    END;
+    END
