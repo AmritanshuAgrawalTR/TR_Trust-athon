@@ -82,4 +82,4 @@ WHERE
              -- Column: TR IP > Asset: No IP
              (column_information_security_sub_classification LIKE '%TR IP%'
               AND INFORMATION_SECURITY_SUB_CLASSIFICATION LIKE '%No IP%')
-         ));
+         ))

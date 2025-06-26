@@ -127,4 +127,4 @@ SELECT
     'v1.0' AS scoring_version
 
 FROM aggregated_lineage_scores
-ORDER BY dataset_name;
+ORDER BY dataset_name

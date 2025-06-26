@@ -9,4 +9,4 @@ WHERE
     AND MGMT_ENTITY_DESC = TRIM(MGMT_ENTITY_DESC)                    
     AND MGMT_ENTITY_DESC NOT LIKE '%  %'                             
     AND MGMT_ENTITY NOT REGEXP '[^A-Za-z0-9_]'                      
-    AND SOLD_TO NOT REGEXP '[^0-9]';
+    AND SOLD_TO NOT REGEXP '[^0-9]'
